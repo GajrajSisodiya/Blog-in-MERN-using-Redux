@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+/* body{
+  background-image: url("https://source.unsplash.com/user/erondu/1600x900");
+  background-position: center;
+  background-repeat: no-repeat ;
+} */
+header{
+  display: flex!important;
+  flex-wrap: no-wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Caveat', sans-serif;
+}
+.fam{font-family: 'Caveat', sans-serif;
+
+} 
+.menu{
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative!important;
+}
+.dropdown{
+  position: absolute!important;
+  flex-direction: column;
+  align-items: space-between;
+  box-shadow: 0 10px 10px gray;
+  margin: 25px 0;
+  z-index: 1;
+  background-color: lightgray;
+  width: 160px;
+  display: none;
+}
+.dropdown a{
+  
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+/*   margin: 20px; */
+  font-size: 20px;
+  display: block;
+}
+.dropdown a:hover{
+  background-color: black;
+  color: white;
+}
+.menu:hover .dropdown{
+  display: block;
+}
